@@ -169,6 +169,11 @@ cd /opt/masscan
 make
 ln -s /opt/masscan/bin/masscan /usr/local/bin/masscan
 
+# Nmap-parse-output
+apt install -y xsltproc
+git clone https://github.com/ernw/nmap-parse-output.git /opt/nmap-parse-output || git -C /opt/nmap-parse-output pull
+ln -s /opt/nmap-parse-output/nmap-parse-output /usr/local/bin/nmap-parse-output
+
 # AsnLookup
 git clone https://github.com/yassineaboukir/Asnlookup /opt/asnlookup || git -C /opt/asnlookup pull
 pip3 install -r /opt/asnlookup/requirements.txt
