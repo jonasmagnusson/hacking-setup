@@ -31,6 +31,9 @@ apt-get install -y amass
 # CrackMapExec
 apt-get install -y crackmapexec
 
+# Gobuster
+apt install -y gobuster
+
 # SMBMap
 apt-get install -y smbmap
 
